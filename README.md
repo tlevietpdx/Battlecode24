@@ -1,9 +1,10 @@
-# Battlecode 2024 Scaffold
+# Battlecode 2024 - 4 sprints development simulation
 
-This is the Battlecode 2024 scaffold, containing an `examplefuncsplayer`. Read https://play.battlecode.org/bc24/getting-started!
+This is the Battlecode 2024 simulation for 4 sprints Agile development cycle. The term project is hosted where we follow professional software engineer routine to development *strategic features* for our *ducks* (agents) to capture enemy team's flag.
 
-**We are using a rewritten version of the client this year, so please let teh devs know
-if you encounter any issues or have any feedback!**
+Throughout the term, we have constantly stayed at the top 1 ranking for winning most matches against other teams. Our agents are dominant in the battlefield and actively attack to capture the flags in the shortest round possible. 
+
+For each development sprint, we would compare our development features against the previous sprint to make sure that we are making our agents stronger and better.
 
 ### Project Structure
 
@@ -12,11 +13,11 @@ if you encounter any issues or have any feedback!**
 - `build.gradle`
   The Gradle build file used to build and run players.
 - `src/`
-  Player source code.
+  Team development source code.
 - `test/`
-  Player test code.
+  Team development test code.
 - `client/`
-  Contains the client. The proper executable can be found in this folder (don't move this!)
+  Contains the client. The proper executable can be found in this folder.
 - `build/`
   Contains compiled player code and other artifacts of the build process. Can be safely ignored.
 - `matches/`
@@ -28,90 +29,15 @@ if you encounter any issues or have any feedback!**
 - `gradle/`
   Contains files used by the Gradle wrapper scripts. Can be safely ignored.
 
-### (Pre) Getting Started
+### Credits
+Aadit Bagdi -
+	*Global Upgrade features*
 
-Information Retrieved from [BC24](https://play.battlecode.org/bc24/getting-started)
+Viet Thanh Le (myself) -
+	*Attack Duck, Navigation, Overall strategy features*
 
-Before getting started, there are a few steps that first need to be accomplished in order to make the Battlecode 2024 Scaffold work.
+Vienna Wagner -
+	*Healer Duck features*
 
-#### Step 1 - Download and Install Java
-
-You will need an Oracle Java Development Kit (JDK) version 8. Make sure to set an environement variable to the following:
-
-```
-$ export JAVA_HOME=< -- PATH replaced here -- >
-```
-
-This PATH should look _<u>similar</u>_, perhaps not idential, to the following:
-
-`/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home`
-
-If you are unsure, use the following command to change directories into the JavaVirtualMachines folder:
-
-```
-$ cd /Library/Java/JavaVirtualMachines
-```
-
-- **<u>Note: higher versions of Java DO NOT work</u>**
-
-#### Step 2 - Ensure Code is Downloaded and Accessible
-
-Assuming you have downloaded the Battlecode 2024 scaffold zip folder, or have cloned a github repository containing the Battlecode 2024 scaffold code, you need to change into the root directory. You will know that you are in the root directory if there exists a script called `gradlew`
-
-#### Step 3 - Initial Set Up for Building
-
-First Run:
-
-```
-$ ./gradlew update
-```
-
-Then Run:
-
-```
-$ ./gradlew build
-```
-
-You should now be set to go. The following can be ran to see what other gradle tasks are available. Essentially the 'help' equivalent:
-
-```
-$ ./gradlew -q tasks
-```
-
-**At this point there should be a folder called `client/`**
-
-### How to get started
-
-You are free to directly edit `examplefuncsplayer`.
-However, we recommend you make a new bot by copying `examplefuncsplayer` to a new package under the `src` folder.
-
-### Running Battlecode from the Terminal or IDE
-
-Run games directly with the gradle task:
-
-```
-$ ./gradlew run -Pmaps=[map] -PteamA=[Team A] -PteamB=[Team B]
-```
-
-if the map and/or team is unspecified, then Battlecode will default to that listed in `gradle.properties`
-
-### Useful Commands
-
-- `./gradlew build`
-  Compiles your player
-- `./gradlew run`
-  Runs a game with the settings in gradle.properties
-- `./gradlew update`
-  Update configurations for the latest version -- run this often
-- `./gradlew zipForSubmit`
-  Create a submittable zip file
-- `./gradlew tasks`
-  See what else you can do!
-
-### Configuration
-
-Look at `gradle.properties` for project-wide configuration.
-
-If you are having any problems with the default client, please report to teh devs and
-feel free to set the `compatibilityClient` configuration to `true` to download a different
-version of the client.
+Taylor Hughes -
+    *Builder Duck features*
